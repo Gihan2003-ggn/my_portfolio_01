@@ -258,29 +258,246 @@ section { padding:5rem 0; position:relative; overflow:hidden; }
 .tech-item-title { font-weight:600; margin-bottom:.35rem; font-size:.9rem; }
 .tech-item-desc  { font-size:.85rem; color:var(--muted); }
 
-.about1-section {
-  position: relative;
-  overflow: hidden;
+/* ── About Section ── */
+/* ── About Section ── */
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;          /* Changed to start for better alignment */
 }
 
-.about1-section::before {
-  content: "";
+/* LEFT SIDE - Photo Wrapper */
+.about-image-wrapper {
+  position: relative;
+  min-height: 500px;           /* Slightly taller for better look */
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.about-photo {
   position: absolute;
   inset: 0;
+  background-image: url('assets/aaa.png');     /* Your photo */
+  background-size: cover;
+  background-position: center 30%;   /* Focus on face */
+  background-repeat: no-repeat;
 
-  background: url("assets/img.png") center/cover no-repeat;
-
-  opacity: 0.07; /* watermark level */
-  filter: grayscale(100%) blur(2px);
-
-  z-index: 0;
+  opacity: 0.25;                     /* Slightly increased for left side */
+  filter: blur(1px) brightness(0.95) contrast(1.1);
+  z-index: 1;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
 }
 
-/* content eka udata genanna */
-.about1-section .container {
+/* RIGHT SIDE - Content */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.about-text p {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.about-bullets {
+  list-style: none;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.about-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bullet-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+  flex-shrink: 0;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* Glass Card */
+.glass-card {
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.tech-stack-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+  color: white;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tech-item {
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  border-color: var(--primary);
+  background: rgba(255, 255, 255, 0.12);
+  transform: scale(1.05);
+}
+
+.tech-item-title {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  font-size: 0.9rem;
+  color: white;
+}
+
+.tech-item-desc {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Smooth Scrolling for Navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optional: Add some top padding so title isn't hidden under fixed navbar */
+#about {
+  padding-top: 100px;     /* Increase if you have a fixed navbar */
+  scroll-margin-top: 80px;   /* Helps when scrolling from nav */
+}
+
+/* LEFT SIDE - Photo Wrapper */
+.about-image-wrapper {
   position: relative;
-  z-index: 2;
+  min-height: 520px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background: #0a0a0a;
+  cursor: pointer;
+  transition: transform 0.4s ease;
 }
+
+.about-image-wrapper:hover {
+  transform: scale(1.03);
+}
+
+/* Your Photo with animation */
+.about-photo {
+  position: absolute;
+  inset: 0;
+  background-image: url('assets/aaa.png');
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+
+  opacity: 0.25;
+  filter: blur(1px) brightness(0.95) contrast(1.1);
+  z-index: 1;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.7);
+  transform: scale(1.05);
+
+  /* Entrance Animation */
+  animation: imageReveal 1.2s ease forwards;
+}
+
+/* Shine Effect Overlay */
+.shine-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+          135deg,
+          transparent 40%,
+          rgba(255, 255, 255, 0.6) 50%,
+          transparent 60%
+  );
+  background-size: 300% 300%;
+  opacity: 0;
+  z-index: 2;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+/* Trigger shine on hover */
+.about-image-wrapper:hover .shine-overlay {
+  opacity: 1;
+  animation: shineMove 1.2s ease forwards;
+}
+
+/* Keyframes */
+@keyframes imageReveal {
+  from {
+    opacity: 0;
+    transform: scale(1.2) translateY(30px);
+    filter: blur(8px) brightness(0.6);
+  }
+  to {
+    opacity: 0.25;
+    transform: scale(1.05);
+    filter: blur(1px) brightness(0.95) contrast(1.1);
+  }
+}
+
+@keyframes shineMove {
+  0% {
+    background-position: 200% 50%;
+  }
+  100% {
+    background-position: -200% 50%;
+  }
+}
+
+/* Rest of your styles remain the same */
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* ... keep all your other styles (about-text, glass-card, tech-grid, etc.) */
+/*.about1-section {*/
+/*  position: relative;*/
+/*  overflow: hidden;*/
+/*}*/
+
+/*.about1-section::before {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  inset: 0;*/
+
+/*  background: url("assets/img.png") center/cover no-repeat;*/
+
+/*  opacity: 0.07; !* watermark level *!*/
+/*  filter: grayscale(100%) blur(2px);*/
+
+/*  z-index: 0;*/
+/*}*/
+
+/*!* content eka udata genanna *!*/
+/*.about1-section .container {*/
+/*  position: relative;*/
+/*  z-index: 2;*/
+/*}*/
 
 /* ── Services ── */
 .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
