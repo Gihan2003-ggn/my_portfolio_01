@@ -244,6 +244,99 @@ section { padding:5rem 0; position:relative; overflow:hidden; }
 .section-bg  { position:absolute; inset:0; opacity:.15; background:radial-gradient(ellipse at 50% 50%,rgba(168,85,247,.3) 0%,transparent 70%); z-index:0; }
 .section-fade{ position:absolute; inset:0; z-index:1; background:linear-gradient(to bottom,var(--background),rgba(15,15,30,.5),var(--background)); }
 
+
+/* ============================================
+   ROOT VARIABLES (FIXED)
+============================================ */
+:root {
+  --primary: #a855f7;
+  --secondary: #3b82f6;
+  --pink: #ec4899;
+
+  --ticker-bg: #0f172a; /* ✅ FIXED (no more error) */
+  --font-main: 'Space Grotesk', sans-serif;
+}
+
+/* ============================================
+   TICKER BAR
+============================================ */
+.ticker-bar {
+  width: 100%;
+  background: var(--ticker-bg);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 18px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Fade edges */
+.ticker-bar::before,
+.ticker-bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ticker-bar::before {
+  left: 0;
+  background: linear-gradient(90deg, var(--ticker-bg), transparent);
+}
+
+.ticker-bar::after {
+  right: 0;
+  background: linear-gradient(-90deg, var(--ticker-bg), transparent);
+}
+
+/* Moving track */
+.ticker-track {
+  display: flex;
+  gap: 56px;
+  white-space: nowrap;
+  width: max-content;
+  animation: tickerScroll 28s linear infinite;
+}
+
+/* Text items */
+.ticker-track span {
+  font-family: var(--font-main);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: rgba(255,255,255,0.55);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect (pro touch) */
+.ticker-track span:hover {
+  color: #ffffff;
+}
+
+/* Dot icon */
+.ticker-track span i {
+  font-size: 0.45rem;
+  color: var(--pink);
+}
+
+/* Animation */
+@keyframes tickerScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
 /* ── About ── */
 .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:3rem; align-items:center; }
 .about-text p { color:var(--muted); font-size:1.05rem; line-height:1.7; margin-bottom:1rem; }
