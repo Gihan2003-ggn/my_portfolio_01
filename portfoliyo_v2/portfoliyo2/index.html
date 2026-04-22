@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gihan | Creative Developer & Designer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Mouse orb -->
+<div class="mouse-orb" id="orb"></div>
+
+<!-- ══════════════════════ NAVIGATION ══════════════════════ -->
+<nav>
+  <div class="nav-inner">
+    <div class="nav-logo">GIHAN..</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#assignments">Assignments</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ══════════════════════ HERO ══════════════════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="container hero-content">
+    <div class="hero-grid">
+
+      <!-- Left: text -->
+      <div class="reveal from-left">
+        <p class="hero-im">I'm</p>
+        <h1 class="hero-name">
+          <span>G</span><span>I</span><span>H</span><span>A</span><span>N..</span>
+        </h1>
+        <p class="hero-role">Creative Developer &amp; Designer</p>
+        <div class="hero-buttons">
+          <a href="#contact" class="neon-button">Get In Touch</a>
+          <a href="#projects" class="outline-button">View Work</a>
+        </div>
+      </div>
+
+      <!-- Right: avatar -->
+      <div class="reveal from-right hero-image-wrap">
+        <div class="hero-avatar">
+          <img src="assets/img.png" alt="Gihan"
+               onerror="this.src='https://ui-avatars.com/api/?name=Gihan&size=400&background=a855f7&color=fff&bold=true'" />
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Stats -->
+    <div class="reveal stats-row">
+      <div><div class="stat-num gradient-text">50+</div><div class="stat-label">Projects</div></div>
+      <div><div class="stat-num gradient-text">30+</div><div class="stat-label">Clients</div></div>
+      <div><div class="stat-num gradient-text">5+</div><div class="stat-label">Years</div></div>
+    </div>
+  </div>
+
+  <div class="scroll-arrow">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="24" height="24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+  </div>
+</section>
+
+
+<!-- Ticker Bar -->
+<div class="ticker-bar">
+  <div class="ticker-track">
+    <span><i class="fas fa-circle"></i> VISUAL DESIGN</span>
+    <span><i class="fas fa-circle"></i> UI/UX DESIGN</span>
+    <span><i class="fas fa-circle"></i> INTERACTION DESIGN</span>
+    <span><i class="fas fa-circle"></i> CREATIVE DIRECTION</span>
+    <span><i class="fas fa-circle"></i> PRODUCT STRATEGY</span>
+    <span><i class="fas fa-circle"></i> WEB DEVELOPMENT</span>
+    <span><i class="fas fa-circle"></i> VISUAL DESIGN</span>
+    <span><i class="fas fa-circle"></i> UI/UX DESIGN</span>
+    <span><i class="fas fa-circle"></i> INTERACTION DESIGN</span>
+    <span><i class="fas fa-circle"></i> CREATIVE DIRECTION</span>
+    <span><i class="fas fa-circle"></i> PRODUCT STRATEGY</span>
+    <span><i class="fas fa-circle"></i> WEB DEVELOPMENT</span>
+  </div>
+</div>
+
+
+<!-- ══════════════════════ ABOUT ══════════════════════ -->
+<!--<section id="about">-->
+<!--  <div class="container">-->
+<!--    <h2 class="section-title reveal">About Me</h2>-->
+<!--    <div class="about-grid">-->
+
+<!--      <div class="reveal from-left about-text">-->
+<!--        <p>I'm a passionate developer and designer dedicated to creating exceptional digital experiences. With a strong foundation in both design and development, I bridge the gap between beautiful aesthetics and functional code.</p>-->
+<!--        <p>My approach combines modern design principles with cutting-edge technology to deliver solutions that not only look stunning but also perform flawlessly across all devices.</p>-->
+<!--        <ul class="about-bullets">-->
+<!--          <li><span class="bullet-dot"></span><span>Full-stack web development</span></li>-->
+<!--          <li><span class="bullet-dot"></span><span>UI/UX Design &amp; Prototyping</span></li>-->
+<!--          <li><span class="bullet-dot"></span><span>Brand Identity &amp; Visual Design</span></li>-->
+<!--        </ul>-->
+<!--      </div>-->
+
+<!--      <div class="reveal from-right">-->
+<!--        <div class="glass-card tech-stack-card">-->
+<!--          <h3>Tech Stack</h3>-->
+<!--          <div class="tech-grid">-->
+<!--            <div class="tech-item"><div class="tech-item-title">Frontend</div><div class="tech-item-desc">React, TypeScript, Tailwind CSS</div></div>-->
+<!--            <div class="tech-item"><div class="tech-item-title">Backend</div><div class="tech-item-desc">Node.js, Express, PostgreSQL</div></div>-->
+<!--            <div class="tech-item"><div class="tech-item-title">Tools</div><div class="tech-item-desc">Figma, Git, Docker</div></div>-->
+<!--            <div class="tech-item"><div class="tech-item-title">Design</div><div class="tech-item-desc">UI/UX, Branding, Animation</div></div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+<!--<section id="about1" class="about1-section">-->
+<section id="about">
+  <div class="container">
+
+    <!-- About Me Title -->
+    <h2 class="section-title reveal">About Me</h2>
+
+    <div class="about-grid">
+
+      <!-- LEFT SIDE: Your Photo -->
+      <div class="reveal from-left about-image-wrapper">
+        <div class="about-photo">
+          <div class="shine-overlay"></div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE: Text + Tech Stack -->
+      <div class="reveal from-right about-content">
+
+        <div class="about-text">
+          <p>I'm a passionate developer and designer dedicated to creating exceptional digital experiences. With a strong foundation in both design and development, I bridge the gap between beautiful aesthetics and functional code.</p>
+          <p>My approach combines modern design principles with cutting-edge technology to deliver solutions that not only look stunning but also perform flawlessly across all devices.</p>
+
+          <ul class="about-bullets">
+            <li><span class="bullet-dot"></span><span>Full-stack web development</span></li>
+            <li><span class="bullet-dot"></span><span>UI/UX Design &amp; Prototyping</span></li>
+            <li><span class="bullet-dot"></span><span>Brand Identity &amp; Visual Design</span></li>
+          </ul>
+        </div>
+
+        <div class="glass-card tech-stack-card">
+          <h3>Tech Stack</h3>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <div class="tech-item-title">Frontend</div>
+              <div class="tech-item-desc">React, TypeScript, Tailwind CSS</div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-item-title">Backend</div>
+              <div class="tech-item-desc">Node.js, Express, PostgreSQL</div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-item-title">Tools</div>
+              <div class="tech-item-desc">Figma, Git, Docker</div>
+            </div>
+            <div class="tech-item">
+              <div class="tech-item-title">Design</div>
+              <div class="tech-item-desc">UI/UX, Branding, Animation</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ══════════════════════ SERVICES ══════════════════════ -->
+<section id="services">
+  <div class="section-bg"></div>
+  <div class="section-fade"></div>
+  <div class="container" style="position:relative;z-index:10;">
+    <h2 class="section-title reveal">Services</h2>
+    <div class="services-grid">
+
+      <div class="reveal service-card glass-card">
+        <div class="service-blob"></div>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+        <h3 class="service-title">Web Development</h3>
+        <p class="service-desc">Building responsive, high-performance websites and applications with modern frameworks and best practices.</p>
+      </div>
+
+      <div class="reveal service-card glass-card" style="transition-delay:.1s">
+        <div class="service-blob"></div>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+        <h3 class="service-title">UI/UX Design</h3>
+        <p class="service-desc">Creating beautiful, intuitive interfaces that users love. From wireframes to pixel-perfect designs.</p>
+      </div>
+
+      <div class="reveal service-card glass-card" style="transition-delay:.2s">
+        <div class="service-blob"></div>
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        <h3 class="service-title">Performance Optimisation</h3>
+        <p class="service-desc">Ensuring your digital products are fast, efficient, and optimised for all devices and networks.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ SKILLS ══════════════════════ -->
+<section id="skills">
+  <div class="container">
+    <h2 class="section-title reveal">Skills &amp; Expertise</h2>
+    <div class="skills-grid">
+
+      <div class="reveal skill-group glass-card">
+        <h3 class="skill-group-title gradient-text">Frontend</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">React</span><span class="skill-tag">TypeScript</span><span class="skill-tag">Tailwind CSS</span><span class="skill-tag">Next.js</span><span class="skill-tag">Vue.js</span>
+        </div>
+      </div>
+
+      <div class="reveal skill-group glass-card" style="transition-delay:.1s">
+        <h3 class="skill-group-title gradient-text">Backend</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Node.js</span><span class="skill-tag">Express</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">MongoDB</span><span class="skill-tag">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="reveal skill-group glass-card" style="transition-delay:.2s">
+        <h3 class="skill-group-title gradient-text">Design</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Figma</span><span class="skill-tag">UI Design</span><span class="skill-tag">UX Research</span><span class="skill-tag">Prototyping</span><span class="skill-tag">Branding</span>
+        </div>
+      </div>
+
+      <div class="reveal skill-group glass-card" style="transition-delay:.3s">
+        <h3 class="skill-group-title gradient-text">Tools</h3>
+        <div class="skill-tags">
+          <span class="skill-tag">Git</span><span class="skill-tag">Docker</span><span class="skill-tag">CI/CD</span><span class="skill-tag">AWS</span><span class="skill-tag">Firebase</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== Gallery Section ===== -->
+<section id="gallery" class="section">
+  <div class="container">
+
+    <div class="gallery-layout">
+
+      <!-- Left: Title -->
+      <div class="gallery-left">
+        <h2 class="section-title reveal">Gallery</h2>
+      </div>
+
+      <!-- Right: 3D Ring -->
+      <div class="gallery-3d">
+        <div class="ring">
+          <div class="photo"><img src="assets/img.png"   alt="Photo 1"></div>
+          <div class="photo"><img src="assets/my.jpeg"   alt="Photo 2"></div>
+          <div class="photo"><img src="assets/1.jpeg"    alt="Photo 3"></div>
+          <div class="photo"><img src="assets/2.jpeg"    alt="Photo 4"></div>
+          <div class="photo"><img src="assets/3.jpeg"    alt="Photo 5"></div>
+          <div class="photo"><img src="assets/4.jpeg"    alt="Photo 6"></div>
+          <div class="photo"><img src="assets/5.jpeg"    alt="Photo 7"></div>
+          <div class="photo"><img src="assets/6.jpeg"    alt="Photo 8"></div>
+          <div class="photo"><img src="assets/7.jpeg"    alt="Photo 9"></div>
+          <div class="photo"><img src="assets/8.jpeg"    alt="Photo 10"></div>
+          <div class="photo"><img src="assets/9.jpeg"    alt="Photo 11"></div>
+          <div class="photo"><img src="assets/10.jpeg"   alt="Photo 12"></div>
+          <div class="photo"><img src="assets/11.jpeg"   alt="Photo 13"></div>
+          <div class="photo"><img src="assets/12.jpeg"   alt="Photo 14"></div>
+          <div class="photo"><img src="assets/13.jpeg"   alt="Photo 15"></div>
+          <div class="photo"><img src="assets/14.jpeg"   alt="Photo 16"></div>
+          <div class="photo"><img src="assets/15.jpeg"   alt="Photo 17"></div>
+        </div>
+      </div><!-- end gallery-3d -->
+
+    </div><!-- end gallery-layout -->
+  </div>
+</section>
+
+<!-- ===== Assignment Section ===== -->
+<section id="assignments" class="section">
+  <h2>My Assignments</h2>
+  <div class="assignment-container">
+
+    <div class="card">
+      <h3>Assignment 01</h3>
+      <p>HTML basic web page</p>
+      <a href="#">View</a>
+    </div>
+
+    <div class="card">
+      <h3>Assignment 02</h3>
+      <p>CSS styling project</p>
+      <a href="#">View</a>
+    </div>
+
+    <div class="card">
+      <h3>Assignment 03</h3>
+      <p>JavaScript mini project</p>
+      <a href="#">View</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══════════════════════ PROJECTS ══════════════════════ -->
+<section id="projects">
+  <div class="section-bg"></div>
+  <div class="section-fade"></div>
+  <div class="container" style="position:relative;z-index:10;">
+    <h2 class="section-title reveal">Featured Projects</h2>
+    <div class="projects-grid">
+
+      <div class="reveal project-card glass-card">
+        <div class="project-blob"></div>
+        <h3 class="project-title">E-Commerce Platform</h3>
+        <p class="project-desc">A modern e-commerce solution with real-time inventory, payment integration, and admin dashboard.</p>
+        <div class="project-tags"><span class="project-tag">React</span><span class="project-tag">Node.js</span><span class="project-tag">PostgreSQL</span><span class="project-tag">Stripe</span></div>
+        <a href="#" class="project-link">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+      </div>
+
+      <div class="reveal project-card glass-card" style="transition-delay:.1s">
+        <div class="project-blob"></div>
+        <h3 class="project-title">Design System</h3>
+        <p class="project-desc">Comprehensive design system and component library for enterprise applications.</p>
+        <div class="project-tags"><span class="project-tag">Figma</span><span class="project-tag">React</span><span class="project-tag">Storybook</span><span class="project-tag">TypeScript</span></div>
+        <a href="#" class="project-link">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+      </div>
+
+      <div class="reveal project-card glass-card" style="transition-delay:.2s">
+        <div class="project-blob"></div>
+        <h3 class="project-title">SaaS Dashboard</h3>
+        <p class="project-desc">Analytics dashboard with real-time data visualisation and user management.</p>
+        <div class="project-tags"><span class="project-tag">Next.js</span><span class="project-tag">TypeScript</span><span class="project-tag">Recharts</span><span class="project-tag">Tailwind</span></div>
+        <a href="#" class="project-link">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+      </div>
+
+      <div class="reveal project-card glass-card" style="transition-delay:.3s">
+        <div class="project-blob"></div>
+        <h3 class="project-title">Mobile App</h3>
+        <p class="project-desc">Cross-platform mobile application with offline support and cloud sync.</p>
+        <div class="project-tags"><span class="project-tag">React Native</span><span class="project-tag">Firebase</span><span class="project-tag">Redux</span><span class="project-tag">Expo</span></div>
+        <a href="#" class="project-link">View Project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ CONTACT ══════════════════════ -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-inner reveal">
+      <h2 class="section-title" style="margin-bottom:1rem;">Let's Work Together</h2>
+      <p class="contact-sub">Have a project in mind? Let's create something amazing together. Get in touch and let's discuss your ideas.</p>
+      <div class="glass-card contact-card">
+        <h3>Get In Touch</h3>
+        <p class="contact-desc">I'm always open to new opportunities and interesting projects.</p>
+        <div class="contact-links">
+          <a href="mailto:hello@gihan.dev" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            <span>Email</span>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://wa.me/1234567890" target="_blank" rel="noopener" class="contact-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+        <a href="mailto:hello@gihan.dev" class="neon-button" style="width:100%;display:block;text-align:center;">Send Me a Message</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════ FOOTER ══════════════════════ -->
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Gihan. All rights reserved. Crafted with passion and modern technology.</p>
+  </div>
+</footer>
+
+<script src="js.js"></script>
+ </body>
+</html>
