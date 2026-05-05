@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="web, html, css, javascript, js, java, python">
+    <meta name="description" content="World best web development tutorials">
+    <meta name="author" content="IJSE">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Case_03</title>
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../assets/lib/normalize.css">
+    <style>
+        body {
+            margin: 0;
+            height: 300vh;
+            font-family: Arial, sans-serif;
+            background: white;
+        }
+
+        .gray-border {
+            position: fixed;
+            width: 350px;
+            height: 350px;
+            background: gray;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        .red-border {
+            position: fixed;
+            width: 310px;
+            height: 310px;
+            background: red;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        .scroll-container {
+            position: relative;
+            z-index: 3;
+        }
+
+        .purple-content {
+            position: absolute;
+            width: 270px;
+            height: 270px;
+            background: purple;
+            border-radius: 50%;
+            top: 50vh;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        .spacer {
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body>
+<div class="gray-border"></div>
+<div class="red-border"></div>
+
+<div class="scroll-container">
+    <div class="purple-content">Hello</div>
+    <div class="spacer"></div>
+    <div class="purple-content" style="top: 150vh;">Page 2</div>
+    <div class="spacer"></div>
+</div>
+
+</body>
+</html>

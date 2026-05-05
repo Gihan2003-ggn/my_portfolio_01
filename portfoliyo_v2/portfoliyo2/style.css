@@ -634,7 +634,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* ===== 3D Gallery ===== */
+/* ===== Gallery Layout ===== */
 .gallery-layout {
   display: flex;
   align-items: center;
@@ -705,33 +705,90 @@ body {
 .photo:nth-child(15) { transform: rotateY(296.5deg) translateZ(420px); }
 .photo:nth-child(16) { transform: rotateY(317.6deg) translateZ(420px); }
 .photo:nth-child(17) { transform: rotateY(338.8deg) translateZ(420px); }
-/* ===== Assignments ===== */
+
+
+/* Section */
+.section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+/* Container */
 .assignment-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   flex-wrap: wrap;
-  margin-top: 20px;
 }
 
+/* 🔥 Card Design */
 .card {
-  background: #111;
-  padding: 20px;
-  border-radius: 10px;
-  width: 250px;
-  color: white;
+  width: 260px;
+  padding: 25px;
+  border-radius: 15px;
+
+  /* Dark glass effect */
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  color: #fff;
+  text-align: left;
+
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* 🔥 Purple Glow Border */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 15px;
+  padding: 1px;
+  background: linear-gradient(135deg, #8b5cf6, #a855f7, #9333ea);
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+/* Title */
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+/* Description */
+.card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+/* Link */
+.card a {
+  color: #a855f7;
+  text-decoration: none;
+  font-weight: bold;
   transition: 0.3s;
 }
 
+/* Hover Effects 🔥 */
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 40px rgba(168, 85, 247, 0.4);
 }
 
-.card a {
-  display: inline-block;
-  margin-top: 10px;
-  color: cyan;
-  text-decoration: none;
+.card:hover a {
+  color: #fff;
 }
 
 /* ── Projects ── */
